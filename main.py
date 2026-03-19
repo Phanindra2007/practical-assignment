@@ -3,11 +3,13 @@ import time
 import csv
 import sys
 
-sys.path.insert(0, "/workspaces/practical-assignment")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
 from sorting_algorithms.quick_sort import quick_sort
 
-TESTCASE_DIR = "/workspaces/practical-assignment/testcases"
+TESTCASE_DIR = os.path.join(BASE_DIR, "testcases")
 RUNS = 5
 
 def extract_details(filename):
@@ -68,12 +70,12 @@ def main():
             results.append([name, input_type, n, avg_time, avg_comp])
             print(f"{file} | {name} | {input_type} | n={n} | time={avg_time}s | comparisons={avg_comp}")
 
-    with open("/workspaces/practical-assignment/quick_results.csv", "w", newline="") as f:
+    with open(os.path.join(BASE_DIR, "quick_results.csv"), "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Algorithm", "Input Type", "Input Size (N)", "Average Time (s)", "Comparisons"])
         writer.writerows(results)
 
-    print("QuickSort results saved.")
+    print("Quick Sort results saved.")
 
 if __name__ == "__main__":
     main()

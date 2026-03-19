@@ -2,7 +2,8 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/workspaces/practical-assignment/final_results.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+df = pd.read_csv(os.path.join(BASE_DIR, "final_results.csv"))
 
 colors = {
     "Bubble Sort":                  "red",
@@ -23,7 +24,8 @@ case_titles = {
 
 algos = list(colors.keys())
 
-os.makedirs("/workspaces/practical-assignment/graphs", exist_ok=True)
+GRAPHS_DIR = os.path.join(BASE_DIR, "graphs")
+os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Graphs 1-3: Time vs n
 for case in cases:
@@ -40,7 +42,7 @@ for case in cases:
     plt.legend(fontsize=10)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"/workspaces/practical-assignment/graphs/7sorts_time_{case.lower()}.png", dpi=150)
+    plt.savefig(os.path.join(GRAPHS_DIR, f"7sorts_time_{case.lower()}.png"), dpi=150)
     plt.close()
     print(f"Saved 7sorts_time_{case.lower()}.png")
 
@@ -59,8 +61,8 @@ for case in cases:
     plt.legend(fontsize=10)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"/workspaces/practical-assignment/graphs/7sorts_comparisons_{case.lower()}.png", dpi=150)
+    plt.savefig(os.path.join(GRAPHS_DIR, f"7sorts_comparisons_{case.lower()}.png"), dpi=150)
     plt.close()
     print(f"Saved 7sorts_comparisons_{case.lower()}.png")
 
-print("\nDone! All 6 graphs saved in graphs/ folder.")
+print("\nDone! All 6 graphs were saved in the graphs/ folder.")

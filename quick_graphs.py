@@ -2,7 +2,8 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/workspaces/practical-assignment/quick_results.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+df = pd.read_csv(os.path.join(BASE_DIR, "quick_results.csv"))
 
 colors = {
     "Quick Sort (First Pivot)":     "red",
@@ -19,7 +20,8 @@ case_titles = {
 
 algos = list(colors.keys())
 
-os.makedirs("/workspaces/practical-assignment/graphs", exist_ok=True)
+GRAPHS_DIR = os.path.join(BASE_DIR, "graphs")
+os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Graphs 1-3: Time vs n
 for case in cases:
@@ -36,7 +38,7 @@ for case in cases:
     plt.legend(fontsize=10)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"/workspaces/practical-assignment/graphs/quicksort_time_{case.lower()}.png", dpi=150)
+    plt.savefig(os.path.join(GRAPHS_DIR, f"quicksort_time_{case.lower()}.png"), dpi=150)
     plt.close()
     print(f"Saved quicksort_time_{case.lower()}.png")
 
@@ -55,8 +57,8 @@ for case in cases:
     plt.legend(fontsize=10)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"/workspaces/practical-assignment/graphs/quicksort_comparisons_{case.lower()}.png", dpi=150)
+    plt.savefig(os.path.join(GRAPHS_DIR, f"quicksort_comparisons_{case.lower()}.png"), dpi=150)
     plt.close()
     print(f"Saved quicksort_comparisons_{case.lower()}.png")
 
-print("\nDone! All 6 quicksort graphs saved in graphs/ folder.")
+print("\nDone! All 6 Quick Sort graphs were saved in the graphs/ folder.")

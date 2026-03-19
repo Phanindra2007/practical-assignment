@@ -3,7 +3,9 @@ import time
 import csv
 import sys
 
-sys.path.insert(0, "/workspaces/practical-assignment")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
 from sorting_algorithms.selection_sort import selection_sort
 from sorting_algorithms.bubble_sort import bubble_sort
@@ -13,9 +15,9 @@ from sorting_algorithms.quick_sort import quick_sort
 from sorting_algorithms.heap_sort import heap_sort
 from sorting_algorithms.radix_sort import radix_sort
 
-TESTCASE_DIR = "/workspaces/practical-assignment/testcases"
+TESTCASE_DIR = os.path.join(BASE_DIR, "testcases")
 RUNS = 5
-ALGO_NAME = "quick_best"  # change this each run
+ALGO_NAME = "selection"  # Change this for each run.
 
 def get_algorithm(name):
     return {
@@ -89,7 +91,7 @@ def main():
         results.append([algo_pretty, input_type, n, f"{avg_time:.6f}", int(avg_comp)])
         print(f"{file} | {input_type} | n={n} | time={avg_time:.6f}s | comparisons={int(avg_comp)}")
 
-    csv_path = "/workspaces/practical-assignment/final_results.csv"
+    csv_path = os.path.join(BASE_DIR, "final_results.csv")
     file_exists = os.path.exists(csv_path)
     file_empty = (not file_exists) or os.path.getsize(csv_path) == 0
     with open(csv_path, "a", newline="") as f:
@@ -98,7 +100,7 @@ def main():
             writer.writerow(["Algorithm", "Input Type", "Input Size (N)", "Average Time (s)", "Comparisons"])
         writer.writerows(results)
 
-    print(f"\n{algo_pretty} done and saved.")
+    print(f"\n{algo_pretty} completed and saved.")
 
 if __name__ == "__main__":
     main()
