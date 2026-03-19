@@ -88,10 +88,10 @@ def main():
         arr = read_testcase(os.path.join(TESTCASE_DIR, file))
         input_type, n = extract_details(file)
 
-        # skip slow algos
-        if n > 20000 and ALGO_NAME in ["bubble", "insertion", "selection"]:
-            results.append([algo_pretty, input_type, n, "SKIPPED"])
-            continue
+        # # skip slow algos
+        # if n > 20000 and ALGO_NAME in ["bubble", "insertion", "selection"]:
+        #     results.append([algo_pretty, input_type, n, "SKIPPED"])
+        #     continue
 
         times = [measure_time(algo_func, arr) for _ in range(RUNS)]
         avg = sum(times) / RUNS

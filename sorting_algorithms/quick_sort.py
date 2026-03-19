@@ -1,4 +1,6 @@
 import random
+import sys
+sys.setrecursionlimit(10**7)
 
 def quick_sort(arr, pivot_type="first"):
     a = arr.copy()
