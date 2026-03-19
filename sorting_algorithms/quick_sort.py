@@ -1,39 +1,35 @@
 import random
-import sys
-sys.setrecursionlimit(10**7)
 
-def quick_sort(arr, pivot_type="first"):
+def quick_sort(arr, mode="first"):
     a = arr.copy()
-    _quick_sort(a, 0, len(a) - 1, pivot_type)
-    return a
+    comparisons = [0]
 
-def _quick_sort(a, low, high, pivot_type):
-    if low < high:
-        pi = partition(a, low, high, pivot_type)
-        _quick_sort(a, low, pi - 1, pivot_type)
-        _quick_sort(a, pi + 1, high, pivot_type)
+    def partition(a, low, high):
+        pivot = a[low]
+        i = low + 1
+        for j in range(low + 1, high + 1):
+            comparisons[0] += 1
+            if a[j] < pivot:
+                a[i], a[j] = a[j], a[i]
+                i += 1
+        a[low], a[i-1] = a[i-1], a[low]
+        return i - 1
 
-def choose_pivot(a, low, high, pivot_type):
-    if pivot_type == "random":
-        return random.randint(low, high)
-    elif pivot_type == "median":
-        mid = (low + high) // 2
-        trio = [(a[low], low), (a[mid], mid), (a[high], high)]
-        trio.sort()
-        return trio[1][1]
-    return low  # default first
+    def _qs(a, low, high):
+        if low < high:
+            if mode == "random":
+                r = random.randint(low, high)
+                a[low], a[r] = a[r], a[low]
+            elif mode == "median":
+                mid = (low + high) // 2
+                c = [(a[low], low), (a[mid], mid), (a[high], high)]
+                c.sort()
+                a[low], a[c[1][1]] = a[c[1][1]], a[low]
+            pi = partition(a, low, high)
+            _qs(a, low, pi-1)
+            _qs(a, pi+1, high)
 
-def partition(a, low, high, pivot_type):
-    pivot_idx = choose_pivot(a, low, high, pivot_type)
-    a[pivot_idx], a[high] = a[high], a[pivot_idx]
-
-    pivot = a[high]
-    i = low - 1
-
-    for j in range(low, high):
-        if a[j] <= pivot:
-            i += 1
-            a[i], a[j] = a[j], a[i]
-
-    a[i + 1], a[high] = a[high], a[i + 1]
-    return i + 1
+    import sys
+    sys.setrecursionlimit(max(10000, len(a)*2))
+    _qs(a, 0, len(a)-1)
+    return a, comparisons[0]

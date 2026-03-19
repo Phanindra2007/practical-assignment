@@ -1,106 +1,106 @@
-Algorithm,Input Type,Input Size (N),Average Time (s)
-Selection Sort,Random,100,0.000151
-Selection Sort,Random,1000,0.019515
-Selection Sort,Random,10000,1.852131
-Selection Sort,Random,20000,7.265326
-Selection Sort,Random,5000,0.457908
-Selection Sort,Sorted,100,0.000125
-Selection Sort,Sorted,1000,0.017067
-Selection Sort,Sorted,10000,1.802816
-Selection Sort,Sorted,20000,7.265571
-Selection Sort,Sorted,5000,0.441437
-Selection Sort,Reverse,100,0.000219
-Selection Sort,Reverse,1000,0.020303
-Selection Sort,Reverse,10000,1.871505
-Selection Sort,Reverse,20000,7.577130
-Selection Sort,Reverse,5000,0.464028
-Bubble Sort,Random,100,0.000299
-Bubble Sort,Random,1000,0.041503
-Bubble Sort,Random,10000,5.014807
-Bubble Sort,Random,20000,18.427936
-Bubble Sort,Random,5000,1.162469
-Bubble Sort,Sorted,100,0.000168
-Bubble Sort,Sorted,1000,0.020877
-Bubble Sort,Sorted,10000,2.495849
-Bubble Sort,Sorted,20000,10.549491
-Bubble Sort,Sorted,5000,0.592979
-Bubble Sort,Reverse,100,0.000369
-Bubble Sort,Reverse,1000,0.053665
-Bubble Sort,Reverse,10000,6.007248
-Bubble Sort,Reverse,20000,24.349153
-Bubble Sort,Reverse,5000,1.488678
-Insertion Sort,Random,100,0.000148
-Insertion Sort,Random,1000,0.021082
-Insertion Sort,Random,10000,2.253115
-Insertion Sort,Random,20000,9.031742
-Insertion Sort,Random,5000,0.540485
-Insertion Sort,Sorted,100,0.000007
-Insertion Sort,Sorted,1000,0.000093
-Insertion Sort,Sorted,10000,0.000949
-Insertion Sort,Sorted,20000,0.001993
-Insertion Sort,Sorted,5000,0.000471
-Insertion Sort,Reverse,100,0.000272
-Insertion Sort,Reverse,1000,0.038269
-Insertion Sort,Reverse,10000,4.259125
-Insertion Sort,Reverse,20000,17.725466
-Insertion Sort,Reverse,5000,1.050730
-Merge Sort,Random,100,0.000114
-Merge Sort,Random,1000,0.001448
-Merge Sort,Random,10000,0.020620
-Merge Sort,Random,20000,0.047440
-Merge Sort,Random,5000,0.009658
-Merge Sort,Sorted,100,0.000122
-Merge Sort,Sorted,1000,0.001266
-Merge Sort,Sorted,10000,0.014218
-Merge Sort,Sorted,20000,0.029099
-Merge Sort,Sorted,5000,0.006944
-Merge Sort,Reverse,100,0.000084
-Merge Sort,Reverse,1000,0.001032
-Merge Sort,Reverse,10000,0.014462
-Merge Sort,Reverse,20000,0.028679
-Merge Sort,Reverse,5000,0.006368
-Heap Sort,Random,100,0.000124
-Heap Sort,Random,1000,0.002008
-Heap Sort,Random,10000,0.033238
-Heap Sort,Random,20000,0.068278
-Heap Sort,Random,5000,0.013215
-Heap Sort,Sorted,100,0.000188
-Heap Sort,Sorted,1000,0.002347
-Heap Sort,Sorted,10000,0.030325
-Heap Sort,Sorted,20000,0.071806
-Heap Sort,Sorted,5000,0.015064
-Heap Sort,Reverse,100,0.000106
-Heap Sort,Reverse,1000,0.001809
-Heap Sort,Reverse,10000,0.028009
-Heap Sort,Reverse,20000,0.065567
-Heap Sort,Reverse,5000,0.015011
-Radix Sort,Random,100,0.000188
-Radix Sort,Random,1000,0.002061
-Radix Sort,Random,10000,0.023451
-Radix Sort,Random,20000,0.044667
-Radix Sort,Random,5000,0.007253
-Radix Sort,Sorted,100,0.000039
-Radix Sort,Sorted,1000,0.000699
-Radix Sort,Sorted,10000,0.011130
-Radix Sort,Sorted,20000,0.038544
-Radix Sort,Sorted,5000,0.005760
-Radix Sort,Reverse,100,0.000060
-Radix Sort,Reverse,1000,0.001008
-Radix Sort,Reverse,10000,0.014187
-Radix Sort,Reverse,20000,0.041192
-Radix Sort,Reverse,5000,0.006454
-Quick Sort (Median of Three),Random,100,0.000112
-Quick Sort (Median of Three),Random,1000,0.001159
-Quick Sort (Median of Three),Random,10000,0.014567
-Quick Sort (Median of Three),Random,20000,0.036348
-Quick Sort (Median of Three),Random,5000,0.006952
-Quick Sort (Median of Three),Sorted,100,0.000065
-Quick Sort (Median of Three),Sorted,1000,0.000897
-Quick Sort (Median of Three),Sorted,10000,0.013208
-Quick Sort (Median of Three),Sorted,20000,0.027155
-Quick Sort (Median of Three),Sorted,5000,0.006415
-Quick Sort (Median of Three),Reverse,100,0.000069
-Quick Sort (Median of Three),Reverse,1000,0.001336
-Quick Sort (Median of Three),Reverse,10000,0.022221
-Quick Sort (Median of Three),Reverse,20000,0.047591
-Quick Sort (Median of Three),Reverse,5000,0.013477
+Algorithm,Input Type,Input Size (N),Average Time (s),Comparisons
+Bubble Sort,Random,100,0.000408,4950
+Bubble Sort,Random,1000,0.052671,499500
+Bubble Sort,Random,10000,5.563103,49995000
+Bubble Sort,Random,20000,21.308142,199990000
+Bubble Sort,Random,5000,1.363916,12497500
+Bubble Sort,Sorted,100,0.000259,4950
+Bubble Sort,Sorted,1000,0.030679,499500
+Bubble Sort,Sorted,10000,3.472341,49995000
+Bubble Sort,Sorted,20000,13.274458,199990000
+Bubble Sort,Sorted,5000,0.853315,12497500
+Bubble Sort,Reverse,100,0.000486,4950
+Bubble Sort,Reverse,1000,0.060788,499500
+Bubble Sort,Reverse,10000,7.041592,49995000
+Bubble Sort,Reverse,20000,26.961454,199990000
+Bubble Sort,Reverse,5000,1.742705,12497500
+Selection Sort,Random,100,0.000239,4950
+Selection Sort,Random,1000,0.031020,499500
+Selection Sort,Random,10000,2.719008,49995000
+Selection Sort,Random,20000,10.854587,199990000
+Selection Sort,Random,5000,0.668449,12497500
+Selection Sort,Sorted,100,0.000210,4950
+Selection Sort,Sorted,1000,0.025387,499500
+Selection Sort,Sorted,10000,2.659935,49995000
+Selection Sort,Sorted,20000,10.556036,199990000
+Selection Sort,Sorted,5000,0.672158,12497500
+Selection Sort,Reverse,100,0.000218,4950
+Selection Sort,Reverse,1000,0.028345,499500
+Selection Sort,Reverse,10000,2.816115,49995000
+Selection Sort,Reverse,20000,11.150412,199990000
+Selection Sort,Reverse,5000,0.704312,12497500
+Insertion Sort,Random,100,0.000287,2534
+Insertion Sort,Random,1000,0.029600,255174
+Insertion Sort,Random,10000,2.731998,24820668
+Insertion Sort,Random,20000,10.933045,99094115
+Insertion Sort,Random,5000,0.680945,6215100
+Insertion Sort,Sorted,100,0.000008,99
+Insertion Sort,Sorted,1000,0.000108,999
+Insertion Sort,Sorted,10000,0.001158,9999
+Insertion Sort,Sorted,20000,0.002494,19999
+Insertion Sort,Sorted,5000,0.000679,4999
+Insertion Sort,Reverse,100,0.000528,4950
+Insertion Sort,Reverse,1000,0.048607,499500
+Insertion Sort,Reverse,10000,5.413447,49995000
+Insertion Sort,Reverse,20000,22.058432,199990000
+Insertion Sort,Reverse,5000,1.334518,12497500
+Merge Sort,Random,100,0.000141,532
+Merge Sort,Random,1000,0.001931,8717
+Merge Sort,Random,10000,0.027266,120430
+Merge Sort,Random,20000,0.053304,260888
+Merge Sort,Random,5000,0.011483,55217
+Merge Sort,Sorted,100,0.000103,316
+Merge Sort,Sorted,1000,0.001240,4932
+Merge Sort,Sorted,10000,0.015207,64608
+Merge Sort,Sorted,20000,0.036404,139216
+Merge Sort,Sorted,5000,0.007284,29804
+Merge Sort,Reverse,100,0.000098,356
+Merge Sort,Reverse,1000,0.001252,5044
+Merge Sort,Reverse,10000,0.015869,69008
+Merge Sort,Reverse,20000,0.033347,148016
+Merge Sort,Reverse,5000,0.007278,32004
+Heap Sort,Random,100,0.000166,1022
+Heap Sort,Random,1000,0.002907,16831
+Heap Sort,Random,10000,0.044583,235439
+Heap Sort,Random,20000,0.088277,510677
+Heap Sort,Random,5000,0.018209,107676
+Heap Sort,Sorted,100,0.000170,1081
+Heap Sort,Sorted,1000,0.002824,17583
+Heap Sort,Sorted,10000,0.040243,244460
+Heap Sort,Sorted,20000,0.095175,529074
+Heap Sort,Sorted,5000,0.018132,112126
+Heap Sort,Reverse,100,0.000146,944
+Heap Sort,Reverse,1000,0.002406,15965
+Heap Sort,Reverse,10000,0.035800,226682
+Heap Sort,Reverse,20000,0.078947,493307
+Heap Sort,Reverse,5000,0.016472,103227
+Radix Sort,Random,100,0.000122,600
+Radix Sort,Random,1000,0.001582,6000
+Radix Sort,Random,10000,0.014743,60000
+Radix Sort,Random,20000,0.042295,140000
+Radix Sort,Random,5000,0.007282,30000
+Radix Sort,Sorted,100,0.000038,200
+Radix Sort,Sorted,1000,0.000744,3000
+Radix Sort,Sorted,10000,0.009848,40000
+Radix Sort,Sorted,20000,0.038934,140000
+Radix Sort,Sorted,5000,0.004807,20000
+Radix Sort,Reverse,100,0.000054,300
+Radix Sort,Reverse,1000,0.000966,4000
+Radix Sort,Reverse,10000,0.012538,50000
+Radix Sort,Reverse,20000,0.033507,140000
+Radix Sort,Reverse,5000,0.004633,20000
+Quick Sort (Median of Three),Random,100,0.000087,532
+Quick Sort (Median of Three),Random,1000,0.001689,9628
+Quick Sort (Median of Three),Random,10000,0.022131,131141
+Quick Sort (Median of Three),Random,20000,0.047347,304873
+Quick Sort (Median of Three),Random,5000,0.009142,59490
+Quick Sort (Median of Three),Sorted,100,0.000083,480
+Quick Sort (Median of Three),Sorted,1000,0.001193,7987
+Quick Sort (Median of Three),Sorted,10000,0.018142,113631
+Quick Sort (Median of Three),Sorted,20000,0.036844,247248
+Quick Sort (Median of Three),Sorted,5000,0.010112,51822
+Quick Sort (Median of Three),Reverse,100,0.000160,1302
+Quick Sort (Median of Three),Reverse,1000,0.014615,125502
+Quick Sort (Median of Three),Reverse,10000,1.321568,12505002
+Quick Sort (Median of Three),Reverse,20000,5.357587,50010002
+Quick Sort (Median of Three),Reverse,5000,0.344515,3127502

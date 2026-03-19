@@ -1,46 +1,46 @@
-Algorithm,Input Type,Input Size (N),Average Time (s)
-Quick Sort (First Pivot),Random,100,0.000077
-Quick Sort (Random Pivot),Random,100,0.000139
-Quick Sort (Median of Three),Random,100,0.000106
-Quick Sort (First Pivot),Random,1000,0.001393
-Quick Sort (Random Pivot),Random,1000,0.001485
-Quick Sort (Median of Three),Random,1000,0.001072
-Quick Sort (First Pivot),Random,10000,0.013892
-Quick Sort (Random Pivot),Random,10000,0.019010
-Quick Sort (Median of Three),Random,10000,0.018901
-Quick Sort (First Pivot),Random,20000,0.029961
-Quick Sort (Random Pivot),Random,20000,0.039058
-Quick Sort (Median of Three),Random,20000,0.031302
-Quick Sort (First Pivot),Random,5000,0.006143
-Quick Sort (Random Pivot),Random,5000,0.007976
-Quick Sort (Median of Three),Random,5000,0.006632
-Quick Sort (First Pivot),Sorted,100,0.000184
-Quick Sort (Random Pivot),Sorted,100,0.000085
-Quick Sort (Median of Three),Sorted,100,0.000063
-Quick Sort (First Pivot),Sorted,1000,0.015925
-Quick Sort (Random Pivot),Sorted,1000,0.001832
-Quick Sort (Median of Three),Sorted,1000,0.001019
-Quick Sort (First Pivot),Sorted,10000,1.442112
-Quick Sort (Random Pivot),Sorted,10000,0.015990
-Quick Sort (Median of Three),Sorted,10000,0.011294
-Quick Sort (First Pivot),Sorted,20000,5.771332
-Quick Sort (Random Pivot),Sorted,20000,0.035658
-Quick Sort (Median of Three),Sorted,20000,0.024784
-Quick Sort (First Pivot),Sorted,5000,0.372217
-Quick Sort (Random Pivot),Sorted,5000,0.009178
-Quick Sort (Median of Three),Sorted,5000,0.006649
-Quick Sort (First Pivot),Reverse,100,0.000548
-Quick Sort (Random Pivot),Reverse,100,0.000130
-Quick Sort (Median of Three),Reverse,100,0.000096
-Quick Sort (First Pivot),Reverse,1000,0.033195
-Quick Sort (Random Pivot),Reverse,1000,0.001260
-Quick Sort (Median of Three),Reverse,1000,0.001300
-Quick Sort (First Pivot),Reverse,10000,3.139947
-Quick Sort (Random Pivot),Reverse,10000,0.015272
-Quick Sort (Median of Three),Reverse,10000,0.018979
-Quick Sort (First Pivot),Reverse,20000,12.336785
-Quick Sort (Random Pivot),Reverse,20000,0.032935
-Quick Sort (Median of Three),Reverse,20000,0.041120
-Quick Sort (First Pivot),Reverse,5000,0.774458
-Quick Sort (Random Pivot),Reverse,5000,0.007382
-Quick Sort (Median of Three),Reverse,5000,0.008662
+Algorithm,Input Type,Input Size (N),Average Time (s),Comparisons
+Quick Sort (First Pivot),Random,100,0.000077,642
+Quick Sort (Random Pivot),Random,100,0.000120,645
+Quick Sort (Median of Three),Random,100,0.000097,532
+Quick Sort (First Pivot),Random,1000,0.001574,10602
+Quick Sort (Random Pivot),Random,1000,0.001864,10750
+Quick Sort (Median of Three),Random,1000,0.001435,9628
+Quick Sort (First Pivot),Random,10000,0.020578,153952
+Quick Sort (Random Pivot),Random,10000,0.026913,159522
+Quick Sort (Median of Three),Random,10000,0.023659,131141
+Quick Sort (First Pivot),Random,20000,0.045527,357681
+Quick Sort (Random Pivot),Random,20000,0.052568,336627
+Quick Sort (Median of Three),Random,20000,0.045200,304873
+Quick Sort (First Pivot),Random,5000,0.009739,76818
+Quick Sort (Random Pivot),Random,5000,0.011169,68147
+Quick Sort (Median of Three),Random,5000,0.008911,59490
+Quick Sort (First Pivot),Sorted,100,0.000341,4950
+Quick Sort (Random Pivot),Sorted,100,0.000117,682
+Quick Sort (Median of Three),Sorted,100,0.000082,480
+Quick Sort (First Pivot),Sorted,1000,0.036654,499500
+Quick Sort (Random Pivot),Sorted,1000,0.001759,10635
+Quick Sort (Median of Three),Sorted,1000,0.001355,7987
+Quick Sort (First Pivot),Sorted,10000,3.319759,49995000
+Quick Sort (Random Pivot),Sorted,10000,0.023997,158268
+Quick Sort (Median of Three),Sorted,10000,0.016426,113631
+Quick Sort (First Pivot),Sorted,20000,13.340648,199990000
+Quick Sort (Random Pivot),Sorted,20000,0.048586,340209
+Quick Sort (Median of Three),Sorted,20000,0.035648,247248
+Quick Sort (First Pivot),Sorted,5000,0.834559,12497500
+Quick Sort (Random Pivot),Sorted,5000,0.010656,67261
+Quick Sort (Median of Three),Sorted,5000,0.007860,51822
+Quick Sort (First Pivot),Reverse,100,0.000476,4950
+Quick Sort (Random Pivot),Reverse,100,0.000136,638
+Quick Sort (Median of Three),Reverse,100,0.000222,1302
+Quick Sort (First Pivot),Reverse,1000,0.051442,499500
+Quick Sort (Random Pivot),Reverse,1000,0.001702,10853
+Quick Sort (Median of Three),Reverse,1000,0.014167,125502
+Quick Sort (First Pivot),Reverse,10000,5.209922,49995000
+Quick Sort (Random Pivot),Reverse,10000,0.023861,155314
+Quick Sort (Median of Three),Reverse,10000,1.307706,12505002
+Quick Sort (First Pivot),Reverse,20000,20.783203,199990000
+Quick Sort (Random Pivot),Reverse,20000,0.049854,341477
+Quick Sort (Median of Three),Reverse,20000,5.292138,50010002
+Quick Sort (First Pivot),Reverse,5000,1.304718,12497500
+Quick Sort (Random Pivot),Reverse,5000,0.010301,71604
+Quick Sort (Median of Three),Reverse,5000,0.328995,3127502
