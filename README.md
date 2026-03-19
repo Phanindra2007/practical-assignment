@@ -7,6 +7,8 @@
 - **final_main.py** - Runs all 7 sorting algorithms (including quick sort with median-of-three) and outputs metrics to `final_results.csv`.
   - To switch algorithms, modify the `ALGO_NAME` variable on line 18.
 
+- All the seven sorting algorithms are implemented in `/sorting_algorithms` directory.
+
 ## Test Cases
 
 Test data is located in the `testcases/` directory.
@@ -20,6 +22,7 @@ python3 <file_name>
 ```
 
 For example:
+
 ```bash
 python3 main.py
 python3 final_main.py
