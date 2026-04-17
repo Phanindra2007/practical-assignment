@@ -24,7 +24,7 @@ case_titles = {
 
 algos = list(colors.keys())
 
-GRAPHS_DIR = os.path.join(BASE_DIR, "graphs")
+GRAPHS_DIR = os.path.join(BASE_DIR, "graphs/7sort_graphs")
 os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Graphs 1-3: Time vs n
