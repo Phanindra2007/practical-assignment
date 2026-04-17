@@ -15,7 +15,7 @@ from sorting_algorithms.quick_sort import quick_sort
 from sorting_algorithms.heap_sort import heap_sort
 from sorting_algorithms.radix_sort import radix_sort
 
-TESTCASE_DIR = os.path.join(BASE_DIR, "testcases")
+TESTCASE_DIR = os.path.join(BASE_DIR, "../testcases")
 RUNS = 5
 ALGO_NAME = "selection"  # Change this for each run.
 
@@ -91,7 +91,7 @@ def main():
         results.append([algo_pretty, input_type, n, f"{avg_time:.6f}", int(avg_comp)])
         print(f"{file} | {input_type} | n={n} | time={avg_time:.6f}s | comparisons={int(avg_comp)}")
 
-    csv_path = os.path.join(BASE_DIR, "final_results.csv")
+    csv_path = os.path.join(BASE_DIR, "../csv_data/final_results.csv")
     file_exists = os.path.exists(csv_path)
     file_empty = (not file_exists) or os.path.getsize(csv_path) == 0
     with open(csv_path, "a", newline="") as f:

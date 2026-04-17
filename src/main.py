@@ -9,7 +9,7 @@ if BASE_DIR not in sys.path:
 
 from sorting_algorithms.quick_sort import quick_sort
 
-TESTCASE_DIR = os.path.join(BASE_DIR, "testcases")
+TESTCASE_DIR = os.path.join(BASE_DIR, "../testcases")
 RUNS = 5
 
 def extract_details(filename):
@@ -70,7 +70,7 @@ def main():
             results.append([name, input_type, n, avg_time, avg_comp])
             print(f"{file} | {name} | {input_type} | n={n} | time={avg_time}s | comparisons={avg_comp}")
 
-    with open(os.path.join(BASE_DIR, "quick_results.csv"), "w", newline="") as f:
+    with open(os.path.join(BASE_DIR, "../csv_data/quick_results.csv"), "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Algorithm", "Input Type", "Input Size (N)", "Average Time (s)", "Comparisons"])
         writer.writerows(results)
